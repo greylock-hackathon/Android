@@ -48,7 +48,8 @@ public class SmsReceiver extends BroadcastReceiver {
         switch (first){
             case 'U':
             case 'u':
-               new Uber()
+               new Uber(originatingNumber).sendLocation();
+
 
                 break;
             case 'M':
